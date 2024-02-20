@@ -1,0 +1,30 @@
+
+.quality {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    height: 377px;
+    border: 1px solid #EDEDED;
+  }
+
+  &-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-description {
+    display: flex;
+    text-align: center;
+    width: 297px;
+  }
+
+}

@@ -1,0 +1,125 @@
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &__box {
+    display: flex;
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  &__logo {
+    display: flex;
+    position: absolute;
+    top: 46px;
+    left: 250px;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-list {
+    display: flex;
+    width: 687px;
+    height: 49px;
+    margin-top: 49px;
+    margin-left: 555px;
+    justify-content: space-around;
+    font-family: Helios;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+      .menu-item_active {
+      border-bottom: 2px solid #E9862A;
+    }
+  }
+
+  .social-networking {
+    display: flex;
+    position: relative;
+    font-family: Gilroy;
+    margin-top: 51px;
+    margin-left: 64px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    color: #187CD3;
+
+    &::after {
+      content: '';
+      position: relative;
+      right: -5px;
+      top: 7px;
+      border: 5px solid transparent;
+      border-top: 5px solid #242627;
+    }
+  }
+
+  &__view {
+    display: flex;
+    position: relative;
+    height: 448px;
+    top: 36px;
+
+    &-arrow {
+      display: flex;
+      width: 1104px;
+      background: #003264;
+      clip-path: 
+        polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+        z-index: 2;
+    }
+
+    &-comand {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      width: 552px;
+      height: 207px;
+      top: 121px;
+      left: 248px;
+
+      h2 {
+        font-family: HeliosC;
+        color: white;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      button {
+        @include button;
+        margin-top: 50px;
+      }
+    }
+
+    &-img {
+      display: flex;
+      position: absolute;
+      background-size: cover;
+      width: 678px;
+      height: 430px;
+      top: 18px;
+      left: 831px;
+      z-index: 3;
+    }
+
+    &-house {
+      display: flex;
+      position: absolute;
+      background-size: contain;
+      width: 1072px;
+      height: 448px;
+      left: 448px;
+      z-index: 1;
+    }
+  }
+}

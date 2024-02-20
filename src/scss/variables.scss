@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Helios;
+  src: url("../fonts/Helios\ Regular.otf") format("opentype"), url("../fonts/heliosbold.ttf")  format("truetype");
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../fonts/gilroy-regular.ttf") format("truetype"), url("../fonts/gilroy-bold.ttf")  format("truetype");
+}
+
+$main-color: #9F0013;
+$dark: #232222;
+$grey: #5C5C5C;
+
+@mixin button {
+  width: 254px;
+  height: 64px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  background: #E9862A;
+  font-family: Helios;
+}
