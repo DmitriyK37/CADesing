@@ -12,8 +12,10 @@
   &__logo {
     display: flex;
     position: absolute;
-    top: 46px;
-    left: 250px;
+    width: 50px;
+    top: 36px;
+    height: 20px;
+    left: 289px;
   }
 
   &__menu {
@@ -22,17 +24,16 @@
 
   &__menu-list {
     display: flex;
-    width: 687px;
-    height: 49px;
-    margin-top: 49px;
-    margin-left: 555px;
+    width: 600px;
+    height: 40px;
+    margin-top: 37px;
+    margin-left: 510px;
     justify-content: space-around;
     font-family: Helios;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
 
       .menu-item_active {
       border-bottom: 2px solid #E9862A;
@@ -43,9 +44,9 @@
     display: flex;
     position: relative;
     font-family: Gilroy;
-    margin-top: 51px;
-    margin-left: 64px;
-    font-size: 14px;
+    margin-top: 38px;
+    margin-left: 21px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 16px;
     text-align: left;
@@ -54,22 +55,55 @@
     &::after {
       content: '';
       position: relative;
-      right: -5px;
+      right: -2px;
       top: 7px;
-      border: 5px solid transparent;
+      border: 3px solid transparent;
       border-top: 5px solid #242627;
+    }
+  }
+
+  .social {
+    display: none;
+    position: absolute;
+    right: 20px;
+    flex-wrap: wrap;
+    width: 140px;
+    height: 99px;
+    z-index: 4;
+    background: white;
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 68px;
+      height: 50px;
+      border: 1px solid #E0E0E0
+    }
+
+    &__icon {
+      width: 25px;
+      height: 25px;
+      fill: #E9862A;
+      ;
+
+      &:hover {
+        fill: #003264;
+      }
     }
   }
 
   &__view {
     display: flex;
     position: relative;
-    height: 448px;
-    top: 36px;
+    justify-content: center;
+    width: 1100px;
+    height: 359px;
+    top: 29px;
 
     &-arrow {
       display: flex;
-      width: 1104px;
+      width: 922px;
       background: #003264;
       clip-path: 
         polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
@@ -80,24 +114,25 @@
       display: flex;
       flex-wrap: wrap;
       position: relative;
-      width: 552px;
-      height: 207px;
-      top: 121px;
-      left: 248px;
+      width: 400px;
+      height: 90px;
+      top: 92px;
+      left: 200px;
 
       h2 {
         font-family: HeliosC;
         color: white;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
-        line-height: 42px;
+        line-height: 34px;
         letter-spacing: 0em;
         text-align: left;
       }
 
       button {
         @include button;
-        margin-top: 50px;
+        margin-top: 51px;
+   
       }
     }
 
@@ -105,10 +140,10 @@
       display: flex;
       position: absolute;
       background-size: cover;
-      width: 678px;
-      height: 430px;
-      top: 18px;
-      left: 831px;
+      width: 550px;
+      height: 345px;
+      top: 14px;
+      left: 750px;
       z-index: 3;
     }
 
@@ -116,10 +151,18 @@
       display: flex;
       position: absolute;
       background-size: contain;
-      width: 1072px;
-      height: 448px;
-      left: 448px;
+      width: 900px;
+      height: 359px;
+      left: 540px;
       z-index: 1;
     }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    display: flex;
   }
 }

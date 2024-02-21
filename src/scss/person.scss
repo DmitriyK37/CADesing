@@ -2,67 +2,76 @@
   display: flex;
   position: relative;
   justify-content: center;
-  height: 446px;
+  width: 1184px;
+  height: 359px;
+  margin-top: 57px;
+  background: #F7F7F7;
 
   &::before {
     content: "";
     position: absolute;
-    width: 52px;
-    height: 94px;
+    width: 44px;
+    height: 76px;
     background-image: url(../img/icon/left.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    border: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    left: 30px;
+    top: 140px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    width: 52px;
-    height: 94px;
+    width: 44px;
+    height: 76px;
     background-image: url(../img/icon/right.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
     border: 1px solid #E0E0E0;
-    right: 20px;
+    right: 30px;
+    top: 140px;
   }
 
 
   &__items {
     display: flex;
     width: 1480px;
-    background: #F7F7F7;
+    
   }
 
 
   &__item {
     display: flex;
+    width: 1480px;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 50px;
+    // justify-content: center;
+    margin-left: 113px;
 
     &-img {
       position: absolute;
-      width: 541px;
-      height: 425px;
+      // width: 434px;
+      height: 338px;
       top: 21px;
-      left: 900px;    
+      right: 42px;    
     }
 
     h2 {
       font-family: Helios;
-      font-size: 36px;
+      font-size: 31px;
       font-weight: 400;
       line-height: 28px;
       letter-spacing: 0em;
       text-align: left;
+      margin-top: 94px;
     }
 
     p {
+      margin-top: 10px;
       font-family: Helios;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       line-height: 28px;
       letter-spacing: 0em;
@@ -71,12 +80,13 @@
     }
 
     &-description {
-      width: 630px;
+      width: 560px;
       height: 128px;
+      margin-top: 29px;
       font-family: Helios;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
-      line-height: 32px;
+      line-height: 26px;
       letter-spacing: 0em;
       text-align: left;
     }

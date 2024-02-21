@@ -3,28 +3,59 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
+  width: 960px;
+  margin-top: 90px;
 
   &-item {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 398px;
-    height: 377px;
+    width: 316px;
+    height: 298px;
     border: 1px solid #EDEDED;
+  }
+
+  &-icon {
+    width: 54px;
+    margin-top: 100px;
+  }
+
+  h3 {
+    font-family: Helios;
+    font-size: 16px;
+    margin-top: 34px;
   }
 
   &-blog {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   &-description {
-    display: flex;
-    text-align: center;
-    width: 297px;
+    display: none;
+  }
+}
+
+.quality-activ {
+
+  .quality-item {
+    box-shadow: 5px 5px 5px 5px;
   }
 
+  .quality-blog {
+
+    .quality-icon {
+      width: 78px;
+      margin-top: 69px;
+    }
+  
+    h3 {
+      margin-top: 25px;
+    }
+  
+    .quality-description {
+      display: flex;
+    }
+
+  }
 }
