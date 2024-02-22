@@ -42,7 +42,9 @@
 			<div class="header__logo">
 				<img src="img/Frame.svg" alt="logo">
 			</div>
+			<div class="header__menu-open"></div>
 				<nav class="header__menu">
+					<div class="header__menu-close"></div>
 						<ul class="header__menu-list">
 								<li class="menu-item"><a href="#">О нас</a></li>
 								<li class="menu-item menu-item_active"><a href="#">Наши ценности</a></li>
@@ -50,106 +52,114 @@
 								<li class="menu-item"><a href="#">Начало карьеры</a></li>
 								<li class="menu-item"><a href="#">Контакты</a></li>
 						</ul>
+						<div>
+							<a href="#" class="social-networking">Социальные сети</a>
+							<ul class="social">
+								<li class="social__item">
+										<a href="" class="social__link">
+												<svg class="social__icon">
+														<use xlink:href="#VK"></use>
+												</svg>
+										</a>
+								</li>
+								<li class="social__item">
+										<a href="" class="social__link">
+												<svg class="social__icon">
+														<use xlink:href="#OK"></use>
+												</svg>
+										</a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link">
+											<svg class="social__icon">
+													<use xlink:href="#facebook"></use>
+											</svg>
+									</a>
+								</li>
+								<li class="social__item">
+										<a href="" class="social__link">
+												<svg class="social__icon">
+														<use xlink:href="#instagram"></use>
+												</svg>
+										</a>
+								</li>
+							</ul>
+						</div>
 				</nav>
-			<div>
-				<a href="#" class="social-networking">Социальные сети</a>
-				<ul class="social">
-					<li class="social__item">
-							<a href="" class="social__link">
-									<svg class="social__icon">
-											<use xlink:href="#VK"></use>
-									</svg>
-							</a>
-					</li>
-					<li class="social__item">
-							<a href="" class="social__link">
-									<svg class="social__icon">
-											<use xlink:href="#OK"></use>
-									</svg>
-							</a>
-					</li>
-					<li class="social__item">
-						<a href="" class="social__link">
-								<svg class="social__icon">
-										<use xlink:href="#facebook"></use>
-								</svg>
-						</a>
-					</li>
-					<li class="social__item">
-							<a href="" class="social__link">
-									<svg class="social__icon">
-											<use xlink:href="#instagram"></use>
-									</svg>
-							</a>
-					</li>
-				</ul>
-			</div>
+
 		</div>
 		<section class="header__view">
 			<div class="header__view-arrow">
 				<div class="header__view-comand">
 					<h2>Энергия твоего роста! – заряжаем твою карьеру</h2>
-					<button>Cтать частью команды</button>
+					<button class="header-button">Cтать частью команды</button>
 				</div>
 			</div>
 			<img class="header__view-img" src="img/finy.png" alt="view-img">
 			<img class="header__view-house" src="img/house.png" alt="house">
+			<div class="form__container">
+				<div class="form__container-close"></div>
+				<form id="registrationForm">
+					<h2>Отклик на вакансию</h2>
+					<div>
+						<label for="vacancy"></label>
+						<input type="text" id="vacancy" name="vacancy" placeholder="Желаемая вакансия *">
+					</div>
+					<div>
+						<label for="username"></label>
+						<input type="text" id="username" name="username" placeholder="Фамилия, имя и отчество *">
+					</div>
+					<div class="form__container-inf">
+						<div>
+							<label for="phone"></label>
+							<input type="tel" id="phone" name="phone" placeholder="Мобильный телефон*">
+						</div>
+						<div>
+							<label for="email"></label>
+							<input type="email" id="email" name="email" placeholder="E-mail">
+						</div>
+					</div>
+					<div>
+						<label for="education"></label>
+						<input type="text" id="education" name="education" placeholder="Образование *">
+					</div>
+	
+					<div>
+						<label for="address"></label>
+						<input type="text" id="address" name="address" placeholder="Адрес места жительства *">
+					</div>
+					<div class="form__container-date">
+						<div>
+							<label for="dob"></label>
+							<input type="date" id="dob" name="dob" data-placeholder="Дата рождения" required aria-required="true">
+						</div>
+						<div>
+							<label class="resume" for="resume">
+								<input type="file" id="resume" name="resume">
+								<span class="resume-line">Загрузить резюме</span>
+							</label>
+						</div>
+					</div>
+					<div>
+						<label for="comments"></label>
+						<textarea id="comments" name="comments" placeholder="Комментарий"></textarea>
+					</div>
+					<div class="form__container-submit">
+						<div>
+							<input type="checkbox" id="license" name="license" required>
+							<label for="license">Я принимаю условия передачи информации</label>
+						</div>
+						<input type="submit" id="s" value="Отправить">
+					</div>
+				</form>
+			</div>
 		</section>
 	</header>
 	<main class="main">
 		<div class="quality"></div>
-		<div class="person"></div>
-		<div class="form-container">
-			<form id="registrationForm">
-				<h2>Отклик на вакансию</h2>
-				<div>
-					<label for="vacancy"></label>
-					<input type="text" id="vacancy" name="vacancy" placeholder="Желаемая вакансия *">
-
-				</div>
-				<div>
-					<label for="username"></label>
-					<input type="text" id="username" name="username" placeholder="Фамилия, имя и отчество *">
-				</div>
-				<div>
-					<div>
-						<label for="phone"></label>
-						<input type="tel" id="phone" name="phone" placeholder="Мобильный телефон*">
-					</div>
-					<div>
-						<label for="email"></label>
-						<input type="email" id="email" name="email" placeholder="E-mail">
-					</div>
-				</div>
-				<div>
-					<label for="education"></label>
-					<input type="text" id="education" name="education" placeholder="Образование *">
-				</div>
-
-				<div>
-					<label for="address"></label>
-					<input type="text" id="address" name="address" placeholder="Адрес места жительства *">
-				</div>
-	
-				<div>
-					<label for="dob"></label>
-					<input type="date" id="dob" name="dob" placeholder="Дата рождения">
-				</div>
-	
-				<div>
-					<label for="resume"></label>
-					<input type="file" id="resume" name="resume">
-				</div>
-	
-				<div>
-					<label for="comments"></label>
-					<textarea id="comments" name="comments" placeholder="Комментарий"></textarea>
-				</div>
-	
-				<div>
-					<input type="submit" id="s" value="Отправить">
-				</div>
-			</form>
+		<div class="person">
+			<div class="person-prew"></div>
+			<div class="person-next"></div>
 		</div>
 	</main>
 </body>

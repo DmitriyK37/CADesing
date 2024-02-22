@@ -48,6 +48,14 @@ body {
     width: 1520px;
 }
 
+@media screen and (max-width: $tablet-width) {
+  
+    body {
+      width: 768px;
+      margin: 0 auto;
+    }
+  }
+
 .main {
     display: flex;
     flex-direction: column;

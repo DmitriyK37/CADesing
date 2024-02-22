@@ -12,7 +12,6 @@
   &__logo {
     display: flex;
     position: absolute;
-    width: 50px;
     top: 36px;
     height: 20px;
     left: 289px;
@@ -44,7 +43,7 @@
     display: flex;
     position: relative;
     font-family: Gilroy;
-    margin-top: 38px;
+    margin-top: 40px;
     margin-left: 21px;
     font-size: 12px;
     font-weight: 500;
@@ -65,12 +64,11 @@
   .social {
     display: none;
     position: absolute;
-    right: 20px;
+    right: 260px;
     flex-wrap: wrap;
     width: 140px;
     height: 99px;
     z-index: 4;
-    background: white;
 
     &__item {
       display: flex;
@@ -78,6 +76,7 @@
       align-items: center;
       width: 68px;
       height: 50px;
+      background: white;
       border: 1px solid #E0E0E0
     }
 
@@ -96,7 +95,6 @@
   &__view {
     display: flex;
     position: relative;
-    justify-content: center;
     width: 1100px;
     height: 359px;
     top: 29px;
@@ -104,6 +102,7 @@
     &-arrow {
       display: flex;
       width: 922px;
+      margin-left: 88px;
       background: #003264;
       clip-path: 
         polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
@@ -164,5 +163,125 @@
 
   .show {
     display: flex;
+  }
+}
+
+@media screen and (max-width: $tablet-width) {
+  
+  .header {
+    
+    &__logo {
+      top: 34px;
+      left: 40px;
+    }
+  
+    &__menu {
+      display: none;
+      position: absolute;
+      width: 768px;
+      height: 472px;
+      background-color: #242627;
+      z-index: 7;
+
+      &-open {
+        position: absolute;
+        width: 28px;
+        height: 18px;
+        top: 39px;
+        left: 700px;
+        background-image: url("../img/icon/open.svg")
+      }
+
+      &-close {
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        background-image: url("../img/icon/close.svg");
+        top: 26px;
+        left: 724px;
+      }
+    }
+  
+    &__menu-list {
+      display: flex;
+      flex-direction: column;
+      width: 125px;
+      height: 256px;
+      margin-top: 68px;
+      margin-left: 40px;
+      color: white;
+    }
+
+     .social-networking {
+    display: none;
+  }
+
+  .social {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 240px;
+    height: 35px;
+    z-index: 8;
+    background: #242627;
+    top: 384px;
+    left: 40px;
+    
+ 
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 47px;
+      height: 35px;
+      background: #242627;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }:hover {
+      border: 1px solid #E0E0E0
+    }
+ 
+
+    &__icon {
+      width: 25px;
+      height: 25px;
+      fill: white;
+
+      &:hover {
+        fill: #003264;
+      }
+    }
+  }
+
+  &__view {
+    width: 768px;
+    height: 398px;
+    top: 96px;
+
+    &-arrow {
+      width: 635px;
+      margin-left: 0px;
+      clip-path: 
+        polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%);
+        z-index: 2;
+    }
+
+    &-comand {
+      left: 40px;
+    }
+
+    &-img {
+      width: 527px;
+      height: 334px;
+      top: 64px;
+      left: 336px;
+    }
+
+    &-house {
+      width: 696px;
+      height: 398px;
+      left: 115px;
+    }
+  }
   }
 }

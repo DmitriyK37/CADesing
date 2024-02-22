@@ -22,8 +22,6 @@ person.forEach((person) => {
   });
 })
 
-// new Form('.form__box', validateForm).render();
-
 const items = document.querySelectorAll('.quality-item');
 
 for (let i = 0; i < items.length; i++) {
@@ -33,8 +31,6 @@ for (let i = 0; i < items.length; i++) {
 function addActiveClass(e) {
 	e.target.classList.toggle("quality-activ");
 }
-
-validateForm();
 
 // export function validateForm() {
 // 	var form = document.getElementById('registrationForm');

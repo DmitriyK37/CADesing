@@ -59,3 +59,67 @@
 
   }
 }
+
+@media screen and (max-width: $tablet-width) {
+
+  .quality {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    margin-top: 150px;
+  
+    &-item {
+      display: flex;
+      justify-content: center;
+      width: 345px;
+      height: 345px;
+      border: 1px solid #EDEDED;
+    }
+  
+    &-icon {
+      width: 72px;
+      margin-top: 100px;
+    }
+  
+    h3 {
+      font-family: Helios;
+      font-size: 20px;
+      margin-top: 34px;
+    }
+  
+    &-blog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    &-description {
+      display: none;
+    }
+  }
+  
+  .quality-activ {
+  
+    .quality-item {
+      box-shadow: 5px 5px 5px 5px;
+    }
+  
+    .quality-blog {
+  
+      .quality-icon {
+        width: 78px;
+        margin-top: 69px;
+      }
+    
+      h3 {
+        margin-top: 25px;
+      }
+    
+      .quality-description {
+        display: flex;
+      }
+  
+    }
+  }
+
+}
