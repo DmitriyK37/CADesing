@@ -6,7 +6,7 @@
 
   &__box {
     display: flex;
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid $Gray6;
   }
 
   &__logo {
@@ -35,7 +35,7 @@
     letter-spacing: 0em;
 
       .menu-item_active {
-      border-bottom: 2px solid #E9862A;
+      border-bottom: 2px solid $orange;
     }
   }
 
@@ -83,7 +83,7 @@
     &__icon {
       width: 25px;
       height: 25px;
-      fill: #E9862A;
+      fill: $orange;
       ;
 
       &:hover {
@@ -95,7 +95,7 @@
   &__view {
     display: flex;
     position: relative;
-    width: 1100px;
+    // width: 1100px;
     height: 359px;
     top: 29px;
 
@@ -112,11 +112,12 @@
     &-comand {
       display: flex;
       flex-wrap: wrap;
-      position: relative;
+      position: absolute;
       width: 400px;
       height: 90px;
       top: 92px;
       left: 200px;
+      z-index: 10;
 
       h2 {
         font-family: HeliosC;
@@ -131,7 +132,7 @@
       button {
         @include button;
         margin-top: 51px;
-   
+        cursor: pointer;
       }
     }
 
@@ -181,7 +182,7 @@
       width: 768px;
       height: 472px;
       background-color: #242627;
-      z-index: 7;
+      z-index: 20;
 
       &-open {
         position: absolute;
@@ -257,6 +258,7 @@
     width: 768px;
     height: 398px;
     top: 96px;
+    overflow: hidden;
 
     &-arrow {
       width: 635px;
@@ -283,5 +285,75 @@
       left: 115px;
     }
   }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .header {
+    
+    &__logo {
+      top: 24px;
+      left: 21px;
+    }
+  
+    &__menu {
+      width: 320px;
+
+      &-open {
+        top: 26px;
+        left: 272px;
+      }
+
+      &-close {
+        top: 26px;
+        left: 276px;
+      }
+    }
+
+    &__view {
+      width: 320px;
+      height: 318px;
+      top: 72px;
+      overflow: hidden;
+
+      &-arrow {
+        width: 320px;
+        margin-left: 0px;
+        clip-path: 
+          polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+          z-index: 2;
+      }
+
+      &-comand {
+        left: 40px;
+      }
+
+      &-img {
+        width: 320px;
+        height: 230px;
+        top: 87px;
+        left: 25px;
+      }
+
+      &-house {
+        display: none;
+      }
+
+      &-comand {
+        top: 0px;
+        height: 350px;
+      
+        h2 {
+          font-size: 22px;
+          margin-top: 20px;
+        }
+
+        button {
+          width: 223px;
+          height: 56px;
+          z-index: 10;
+        }
+      }
+    }
   }
 }

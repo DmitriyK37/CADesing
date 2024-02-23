@@ -84,7 +84,7 @@
 @media screen and (max-width: $tablet-width) {
 
   .person {
-    width: 688px;
+    width: 700px;
     height: 695px;
     margin-top: 57px;
   
@@ -99,7 +99,6 @@
     }
   
     &__item {
-      width: 688px;
       margin-left: 0px;
 
       &-box {
@@ -115,6 +114,58 @@
         height: 338px;
         top: 21px;
         right: 200px;    
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+
+  .person {
+    width: 280px;
+    height: 474px;
+    margin-top: 100px;
+  
+    &-prew {
+      left: 30px;
+      top: 140px;
+    }
+  
+    &-next {
+      right: 30px;
+      top: 140px;
+    }
+  
+    &__item {
+      width: 280px;
+      margin-left: 0px;
+
+      &-box {
+        margin-top: 224px;
+
+        h2 {
+          font-size: 20px;
+          margin-top: 20px;
+        }
+
+        p {
+          font-size: 13px;
+          margin-top: 0px;
+        }
+      }
+  
+      &-img {
+        position: absolute;
+        width: 280px;
+        height: 201px;
+        top: 21px;
+        right: 50px;    
+      }
+
+      &-description {
+        width: 280px;
+        font-size: 13px;
+        margin-top: 15px;
       }
     }
   }

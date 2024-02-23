@@ -46,13 +46,20 @@ input::-webkit-inner-spin-button {
 
 body {
     width: 1520px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: $tablet-width) {
   
     body {
       width: 768px;
-      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+  
+    body {
+      width: 320px;
     }
   }
 

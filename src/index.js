@@ -19,10 +19,30 @@ person.forEach((person) => {
   new personCard(person, '.person').render();
   slider({
     slide: '.person__item',
+    next: '.person-next',
+    prew: '.person-prew'
   });
 })
 
 const items = document.querySelectorAll('.quality-item');
+let offset = 0;
+let radio1 = document.getElementById('radio-1');
+let radio2 = document.getElementById('radio-2');
+let radio3 = document.getElementById('radio-3');
+const qualityBox = document.querySelector('.quality');
+
+radio1.addEventListener('click', function() {
+  qualityBox.style.left = offset + "px";
+});
+
+radio2.addEventListener('click', function() {
+  qualityBox.style.left = (-698 + offset) + "px";
+});
+
+radio3.addEventListener('click', function() {
+  qualityBox.style.left = (-698*2 + offset) + "px";
+});
+
 
 for (let i = 0; i < items.length; i++) {
 	const item = items[i];

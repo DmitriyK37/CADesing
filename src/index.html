@@ -89,12 +89,11 @@
 
 		</div>
 		<section class="header__view">
-			<div class="header__view-arrow">
-				<div class="header__view-comand">
-					<h2>Энергия твоего роста! – заряжаем твою карьеру</h2>
-					<button class="header-button">Cтать частью команды</button>
-				</div>
+			<div class="header__view-comand">
+				<h2>Энергия твоего роста! – заряжаем твою карьеру</h2>
+				<button class="header-button">Cтать частью команды</button>
 			</div>
+			<div class="header__view-arrow"></div>
 			<img class="header__view-img" src="img/finy.png" alt="view-img">
 			<img class="header__view-house" src="img/house.png" alt="house">
 			<div class="form__container">
@@ -103,35 +102,35 @@
 					<h2>Отклик на вакансию</h2>
 					<div>
 						<label for="vacancy"></label>
-						<input type="text" id="vacancy" name="vacancy" placeholder="Желаемая вакансия *">
+						<input type="text" id="vacancy" name="vacancy" placeholder="Желаемая вакансия *" required>
 					</div>
 					<div>
 						<label for="username"></label>
-						<input type="text" id="username" name="username" placeholder="Фамилия, имя и отчество *">
+						<input type="text" id="username" name="username" placeholder="Фамилия, имя и отчество *" required>
 					</div>
 					<div class="form__container-inf">
 						<div>
 							<label for="phone"></label>
-							<input type="tel" id="phone" name="phone" placeholder="Мобильный телефон*">
+							<input type="tel" id="phone" name="phone" placeholder="Мобильный телефон*" required>
 						</div>
 						<div>
 							<label for="email"></label>
-							<input type="email" id="email" name="email" placeholder="E-mail">
+							<input type="email" id="email" name="email" placeholder="E-mail" required>
 						</div>
 					</div>
 					<div>
 						<label for="education"></label>
-						<input type="text" id="education" name="education" placeholder="Образование *">
+						<input type="text" id="education" name="education" placeholder="Образование *" required>
 					</div>
 	
 					<div>
 						<label for="address"></label>
-						<input type="text" id="address" name="address" placeholder="Адрес места жительства *">
+						<input type="text" id="address" name="address" placeholder="Адрес места жительства *" required>
 					</div>
 					<div class="form__container-date">
 						<div>
 							<label for="dob"></label>
-							<input type="date" id="dob" name="dob" data-placeholder="Дата рождения" required aria-required="true">
+							<input type="date" id="dob" name="dob" data-placeholder="Дата рождения" aria-required="true">
 						</div>
 						<div>
 							<label class="resume" for="resume">
@@ -156,7 +155,23 @@
 		</section>
 	</header>
 	<main class="main">
-		<div class="quality"></div>
+		<div class="quality-box">
+			<div class="quality"></div>
+			<div class="quality-radio">
+				<div class="quality-radio-box">
+					<input id="radio-1" type ="radio" name="radio">
+					<label for="radio-1"></label>
+				</div>
+				<div class="quality-radio-box">
+					<input id="radio-2" type ="radio" name="radio">
+					<label for="radio-2"></label>
+				</div>
+				<div class="quality-radio-box">
+					<input id="radio-3" type ="radio" name="radio">
+					<label for="radio-3"></label>
+				</div>
+			</div>
+		</div>
 		<div class="person">
 			<div class="person-prew"></div>
 			<div class="person-next"></div>

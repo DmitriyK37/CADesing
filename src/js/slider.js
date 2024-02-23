@@ -1,6 +1,9 @@
-function slider ({slide}) {
+function slider ({slide, next, prew}) {
 	
   const slides = document.querySelectorAll(slide);
+  const prewSlide = document.querySelector(prew);
+  const nextSlide = document.querySelector(next);
+
 
     let slideIndex = 1;
   
@@ -23,14 +26,28 @@ function slider ({slide}) {
       slides[slideIndex - 1].style.display = 'flex';
     }
   
-    function nextSlide(n) {
+    function nextSlides(n) {
+      showSlides(slideIndex += n);
+    };
+
+    function prewSlides(n) {
+      showSlides(slideIndex -= n);
+    };
+
+    nextSlide.addEventListener('click', handleTouchNext);                                            
+
+    function handleTouchNext(evt) {
+              nextSlides(1);                                           
+    };
+
+    function prewSlides(n) {
       showSlides(slideIndex += n);
     }
 
-    document.addEventListener('click', handleTouchMove);                                            
+    prewSlide.addEventListener('click', handleTouchMove);                                            
 
     function handleTouchMove(evt) {
-              nextSlide(1);                                           
+                prewSlides(1);                                           
     };
 
 }

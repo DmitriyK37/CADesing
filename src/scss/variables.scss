@@ -9,10 +9,12 @@
 }
 
 $tablet-width: 768px;
+$mobile-width: 320px;
 
-$main-color: #9F0013;
-$dark: #232222;
-$grey: #5C5C5C;
+$orange: #E9862A;
+$Gray:#C3C8C8;
+$Gray6: #F2F2F2;
+
 
 @mixin button {
   width: 202px;
@@ -21,6 +23,6 @@ $grey: #5C5C5C;
   text-align: center;
   font-size: 14px;
   border: none;
-  background: #E9862A;
+  background: $orange;
   font-family: Helios;
 }

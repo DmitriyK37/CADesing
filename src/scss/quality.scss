@@ -5,13 +5,15 @@
   justify-content: center;
   width: 960px;
   margin-top: 90px;
+  z-index: 8;
 
   &-item {
     display: flex;
     justify-content: center;
     width: 316px;
     height: 298px;
-    border: 1px solid #EDEDED;
+    border: 1px solid transparent;
+    border-color: #EDEDED;
   }
 
   &-icon {
@@ -32,6 +34,10 @@
   }
 
   &-description {
+    display: none;
+  }
+
+  &-radio {
     display: none;
   }
 }
@@ -62,39 +68,82 @@
 
 @media screen and (max-width: $tablet-width) {
 
+  .quality-box {
+    width: 704px;
+    overflow: hidden;
+  }
+
   .quality {
     display: flex;
-    justify-content: center;
-    width: 768px;
+    position: relative;
+    flex-wrap: nowrap;
+    width: 2100px;
+    height: 350px;
     margin-top: 150px;
   
-    &-item {
-      display: flex;
-      justify-content: center;
-      width: 345px;
-      height: 345px;
-      border: 1px solid #EDEDED;
-    }
-  
-    &-icon {
-      width: 72px;
-      margin-top: 100px;
-    }
-  
-    h3 {
-      font-family: Helios;
-      font-size: 20px;
-      margin-top: 34px;
-    }
-  
-    &-blog {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    &-description {
-      display: none;
+      &-item {
+        display: block;
+        justify-content: center;
+        width: 345px;
+        height: 345px;
+        border: 1px solid #EDEDED;
+      }
+    
+      &-icon {
+        width: 72px;
+        margin-top: 100px;
+      }
+    
+      h3 {
+        font-family: Helios;
+        font-size: 20px;
+        margin-top: 34px;
+      }
+    
+      &-blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      &-description {
+        display: none;
+      }
+
+      &-radio {
+        display: flex;
+        margin-top: 15px;
+        margin-left: 304px;
+
+        &-box {
+          input[type=radio] {
+            display: none;
+          }
+
+          label {
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 41px;
+            margin-right: 0;
+            user-select: none;
+          }:before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background: #E0E0E0;
+          }
+
+          input[type=radio]:checked + label::before {
+            background: $orange;
+          }
+        }
+      }
     }
   }
   
@@ -118,8 +167,11 @@
       .quality-description {
         display: flex;
       }
-  
     }
   }
 
-}
+  @media screen and (max-width: $mobile-width) {
+    .quality-box {
+      display: none;
+    }
+  }
